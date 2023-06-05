@@ -1,0 +1,13 @@
+PROCEDURE IsPalindrome( left,right, word : STRING )
+
+BEGIN
+    IF (word.length = 0 OR left = right ) THEN
+        Write (" it's palindrome ")
+        ELSE 
+        if (word[left] = word[right]) THEN
+        IsPalindrome ( left+1 , right-1 , word)
+        ELSE
+        Write ("it's not palindrome")
+        END_IF
+    END_IF
+END
